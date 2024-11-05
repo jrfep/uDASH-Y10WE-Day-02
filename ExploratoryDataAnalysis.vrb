@@ -1,0 +1,27 @@
+\frametitle{Numerical summaries for two quantitative random variables (III)}
+\phantomsection\label{numerical-summaries-for-two-quantitative-random-variables-iii-1}
+And now let's display the correlation:
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cor}\NormalTok{(AH[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{]) }\CommentTok{\# Produces NA!!!}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##       age hours
+## age     1    NA
+## hours  NA     1
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cor}\NormalTok{(}\FunctionTok{na.omit}\NormalTok{(AH)[,}\DecValTok{1}\SpecialCharTok{:}\DecValTok{2}\NormalTok{])}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##              age      hours
+## age   1.00000000 0.07026975
+## hours 0.07026975 1.00000000
+\end{verbatim}

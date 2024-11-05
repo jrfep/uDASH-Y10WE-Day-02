@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Random Variables}{8}{0}{2}
+\beamer@sectionintoc {3}{Numerical summaries for one variables}{14}{0}{3}
+\beamer@sectionintoc {4}{Graphical Summaries for one variables}{26}{0}{4}
+\beamer@sectionintoc {5}{Summaries for two or more random variables}{40}{0}{5}
