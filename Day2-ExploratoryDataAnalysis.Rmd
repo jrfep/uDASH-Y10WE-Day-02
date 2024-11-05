@@ -134,7 +134,7 @@ First year students taking the MATH1041 course were asked several questions. The
 
 <div class="fold o">
 ```{r echo=TRUE, message=FALSE}
-load("MATH1041-2024T1.RData")
+load("data/MATH1041-2024T1.RData")
 head(survey.df)
 ```
 </div>
@@ -296,7 +296,7 @@ The median splits the data into two groups which contain roughly $50\%$ of the d
 <u> A useful measure for spread could be the `r colFmt("Inter-quartiles range (IQR)", "magenta")`</u>.
 
 ```{r pressure, echo=FALSE, fig.cap="Quartiles and inter-quartile range", out.width = '33%', fig.align="center"}
-knitr::include_graphics("IQR.png")
+knitr::include_graphics("img/IQR.png")
 ```
 
 Other useful measures are the `r colFmt("standard deviation", "magenta")` $\textrm{sd}(\boldsymbol{x})$ and the `r colFmt("variance", "magenta")` $\textrm{var}(\boldsymbol{x}) = \textrm{sd}(\boldsymbol{x})^2$. We voluntarily omit the mathematical expressions, we will use R to calculate them directly.
@@ -616,7 +616,7 @@ It is interpreted as follows:
 
 
 ```{r echo=FALSE, fig.cap="Examples of correlation between two variables", out.width = '33%', fig.align="center", fig.show='hold'}
-knitr::include_graphics(c("CorPos.png","CorNeg.png")) 
+knitr::include_graphics(c("img/CorPos.png","img/CorNeg.png")) 
 ```
 
 In R, the correlation between two variables, say `x` and `y` is computed using `cor(x,y)`. If the variables are stored in the same object (a `matrix` or a `data.frame`), then providing the column indicator is sufficient. E.g., `cor(mat[,1:2])`.
@@ -641,7 +641,7 @@ cor(na.omit(AH)[,1:2])
 The table below provides a summary of which tool to use when providing numerical and/or graphical summaries of one or more variables
 
 ```{r echo=FALSE, fig.cap="Summary of summaries!", out.width = '80%', fig.align="center", fig.show='hold'}
-knitr::include_graphics("NumSum2QVar.png") 
+knitr::include_graphics("img/NumSum2QVar.png") 
 ```
 
 # TL;DR - Code
@@ -649,7 +649,7 @@ knitr::include_graphics("NumSum2QVar.png")
 <details>
   <summary>Toggle to see all of the code</summary>
   ```{r cars, eval = F}
-  load("MATH1041-2024T1.RData")
+  load("data/MATH1041-2024T1.RData")
 head(survey.df)
 dim(survey.df) # dimension of the dataset
 nrow(survey.df) # number of rows in the dataset
